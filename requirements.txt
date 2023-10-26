@@ -1,4 +1,4 @@
 pandas==2.0.3
 PyYAML==6.0.1
 streamlit==1.27.2
-streamlit_authenticator==0.2.3
+streamlit-authenticator==0.2.3
