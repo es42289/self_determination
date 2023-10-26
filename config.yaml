@@ -1,0 +1,22 @@
+# source: https://blog.streamlit.io/streamlit-authenticator-part-1-adding-an-authentication-component-to-your-app/
+credentials:
+  usernames:
+    eskeans:
+      email: es42289@gmail.com
+      name: Elii Skeans
+      password: '$2b$12$mJpz1YsWzdHadQ3c3BOfv.Nztv64aIHW2KKwmvV/TTF/WgFfU8WGK' # To be replaced with hashed password
+    abaechle:
+      email: aaronmbaechle@gmail.com
+      name: Aaron Baechle
+      password: '$2b$12$mJpz1YsWzdHadQ3c3BOfv.Nztv64aIHW2KKwmvV/TTF/WgFfU8WGK' # To be replaced with hashed password
+    jbisha:
+      email: jenny.bisha@gmail.com
+      name: Jenny Bisha
+      password: '$2b$12$mJpz1YsWzdHadQ3c3BOfv.Nztv64aIHW2KKwmvV/TTF/WgFfU8WGK' # To be replaced with hashed password
+cookie:
+  expiry_days: 0
+  key: random_signature_key # Must be string
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - eskeans@xentity.com
