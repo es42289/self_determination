@@ -16,6 +16,7 @@ user_log = load_user_log()
 st.set_page_config(layout="wide")
 st.table(user_log)
 user_log['visits'] = 0
+user_log.to_csv('user_log.csv')
 
 st.table(user_log)
 # Import the YAML file into your script:
