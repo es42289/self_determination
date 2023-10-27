@@ -6,7 +6,8 @@ from yaml.loader import SafeLoader
 
 
 def load_user_log():
-    pd.read_feather('user_log.feather')
+    user_log = pd.read_feather('user_log.feather')
+    return user_log
 user_log = load_user_log()
 
 # config page laout
