@@ -10,10 +10,14 @@ def load_user_log():
     return user_log
 user_log = load_user_log()
 
+
+
 # config page laout
 st.set_page_config(layout="wide")
 st.table(user_log)
+user_log['visits'] = 0
 
+st.table(user_log)
 # Import the YAML file into your script:
 with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
