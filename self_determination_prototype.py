@@ -6,17 +6,13 @@ from yaml.loader import SafeLoader
 
 
 def load_user_log():
-    user_log = pd.read_feather('user_log.feather')
+    user_log = pd.read_csv('user_log.csv')
     return user_log
 user_log = load_user_log()
 
 # config page laout
 st.set_page_config(layout="wide")
 st.table(user_log)
-
-# # initialize session_state
-# if 'authentication_status' not in st.session_state:
-#     st.session_state['authentication_status'] = False
 
 # Import the YAML file into your script:
 with open('config.yaml') as file:
