@@ -8,10 +8,10 @@ from yaml.loader import SafeLoader
 def load_user_log():
     pd.read_feather('user_log.feather')
 user_log = load_user_log()
-st.table(user_log)
 
 # config page laout
 st.set_page_config(layout="wide")
+st.table(user_log)
 
 # # initialize session_state
 # if 'authentication_status' not in st.session_state:
