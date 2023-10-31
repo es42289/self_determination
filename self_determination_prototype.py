@@ -48,7 +48,7 @@ authenticator = stauth.Authenticate(
     config['cookie']['expiry_days'],
     config['preauthorized']
 )
-
+st.title("Self Determination App")
 # # Render the login widget by providing a name for the form and its location (i.e., sidebar or main):
 name, authentication_status, username = authenticator.login('Login', 'main')
 # # Once you have your authenticator object up and running, use the return values to read the name, authentication_status, and username of the authenticated user.
