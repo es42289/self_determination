@@ -70,7 +70,7 @@ if st.session_state["authentication_status"]: # login good
 
     col1.header('Grades')
     col1.write('My Current Grades Are:')
-    col1.table(user_grades[user_grades['date']==user_grades['date'].max()][['ELA','Math','Science','History','Phys. Ed.']].T.rename(columns={2:'Grades',3:'Grades'}))
+    col1.table(user_grades[user_grades['date']==user_grades['date'].max()][['ELA','Math','Science','History','Phys. Ed.']].T.rename(columns={4:'Grades',5:'Grades'}))
     if col1.button("Add Grades"):
         # change button state
         st.session_state['addgrades'] = not st.session_state['addgrades']
